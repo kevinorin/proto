@@ -8203,7 +8203,7 @@ ul.glance_list {
       font-weight: 500; }
 
 /***************  Overall Sec  **************/
-.overall_sec {
+/*.overall_sec {
   width: 100%;
   float: left;
   padding: 0;
@@ -8284,7 +8284,7 @@ ul.glance_list {
     text-decoration: underline; }
     .overall_sec .learn_link:hover {
       color: #D8A03F;
-      text-decoration: none; }
+      text-decoration: none; }*/
 
 .home_icntct.info_contact {
   background: url(../images/home_form_bg.jpg) no-repeat center center;
@@ -8820,3 +8820,67 @@ ul.glance_list {
     -webkit-text-size-adjust: none; }
   .btn_link {
     max-width: 100%; } }
+
+
+
+
+
+/***************  Overall Sec  **************/
+.overall_sec{ width:100%; float:left; margin:0; padding:0; overflow:hidden;}
+.overall_sec .img_info{ width:100%; float:left; margin:0; padding:0; position:relative; top:0; z-index:99; display:block; -webkit-transition: all .6s ease-in-out; -moz-transition: all .6s ease-in-out; -o-transition: all .6s ease-in-out; -ms-transition: all .6s ease-in-out; transition:all .6s ease-in-out;}
+.overall_sec .img_info figure{ width:100%; float:left; margin:0; padding:0;}
+.overall_sec .img_info figure img{ width:100%; height:540px; object-fit: cover;}
+.overall_sec .o_block{ width:100%; min-height:540px; float:left; margin:0; padding:15px 42px 10px 42px; position:relative; height:100%; background:#5891a2;}
+.overall_sec .o_block h3{ min-width:150px; margin:0 0 21px 0; padding:0; font-size:26px; color:#fff; line-height:30px; font-family: 'Oswald'; font-weight:700; text-transform:uppercase;}
+.overall_sec .o_block h4{ margin:0 0 18px 0; padding:0; font-size:21px; color:#fff; font-family: 'Oswald'; font-weight:700; text-transform:uppercase;}
+.overall_sec .over_more{ width:100%; float:left; display:none; opacity:0; -webkit-transition: all .6s ease-in-out; -moz-transition: all .6s ease-in-out; -o-transition: all .6s ease-in-out; -ms-transition: all .6s ease-in-out; transition:all .6s ease-in-out;}
+.overall_sec .o_block p{ margin:0 0 56px 0; padding:0; font-size:21px; color:#fff;}
+.overall_sec .o_block p i.fa-star{ font-size:15px; margin:0 2px 0 0;}
+.overall_sec .o_block p i{ margin:0 0 0 5px;}
+.overall_sec .learn_link{ margin:0; padding:0; font-size:21px; color:#fff; text-transform:uppercase; font-weight:700; text-decoration:underline;}
+.overall_sec .learn_link:hover{ color:#d8a03f; text-decoration: none;}
+.overall_sec .o_block .arrow_link { position: absolute; bottom: 20px; right: 33px; font-size: 18px; color: #fff; } 
+.overall_sec .o_block .arrow_link:hover{  color:#D8A03F; }
+
+/*.overall_sec [class^="col"]:last-child .img_info, .overall_sec > [class*=" col"]:last-child .img_info { left:auto; right:100%;}*/
+
+.overall_sec .img_info.imgactive{ opacity:1; display:block;}
+.overall_sec .over_more.imgactive{ opacity:1; display:block;}
+
+.overall_sec .o_block.o_block_2{ background:#253741; padding-bottom:10px;}
+.overall_sec .o_block.o_block_3{ background:#B88835;}
+.overall_sec .o_block.o_block_4{ background:#50636F;}
+.overall_sec .o_block.o_block_5{ background:#7698b3;}
+
+
+/****************** Home Over  *******************/
+.home_over{ width:100%; float:left; padding:0; margin:0;}
+
+.overall_sec .o_block h3{ min-width:100px; padding:0; font-size:22px; line-height:26px;}
+
+@media (max-width:1250px) {
+.overall_sec .o_block{ min-height:400px; padding:15px 22px 10px 22px;}
+.overall_sec .img_info figure img{ height:400px;}
+.overall_sec .o_block h3{ font-size:18px;}
+}
+
+@media (max-width: 991px) {
+.overall_sec .o_block{ min-height:300px; padding:15px 15px 30px 15px;}
+.overall_sec .img_info figure img{ height:300px;}
+.overall_sec .o_block h3{ font-size:15px; line-height:normal;}
+.overall_sec .o_block h4{ font-size:14px;}
+.overall_sec .o_block p{ font-size:13px; margin-bottom:20px;}
+.overall_sec .learn_link{ font-size:15px;}
+.overall_sec .o_block p i.fa-star{ font-size:12px;}
+}
+
+@media (max-width:767px) {
+.overall_sec .col{-webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;}
+.overall_sec .o_block, .overall_sec .o_block.o_block_2{ min-height:inherit; padding:48px 25px 38px 25px;}
+.overall_sec .img_info figure img{ height:auto;}
+.overall_sec .o_block p{ font-size:21px; margin-bottom:46px;}
+.overall_sec .o_block h3{ font-size:23px; margin-bottom:11px;}
+.overall_sec .o_block h4{ font-size:19px;}
+.overall_sec .learn_link{ font-size:21px;}
+.overall_sec .o_block .arrow_link{ transform: rotate(90deg);}
+}
