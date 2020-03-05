@@ -1,0 +1,17 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "working sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/custom.scss css/style.css -w"
+  },
+  "author": "newtoneweb",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  }
+}
